@@ -1,24 +1,51 @@
 <!doctype html>
 <html lang="en-us">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio | Your Name</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <!-- Filename: portfolio.html -->
+    <title>About | Brenda Thompson</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- local css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style2.css">
 </head>
-
+  
 <body>
-
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Brenda Thompson</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <!-- The navbar is outside the container so it bleeds all the way to edge -->
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg  navbar-light bg-light">
+              <!-- Brand  -->
+              <a class="navbar-brand" href="index.html">Brenda Thompson</a>
+              <!-- Toggler/collapsible button -->
+              <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                      aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Navigation Menu -->
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">About</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+                <!-- inline search form inside the navbar. Not functional yet -->
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </div> <!-- end div with collapse class to collapse nav menu -->
+          </nav>
+        </div> <!-- end nav bar column -->
+      </div> <!-- end nav bar row -->
 
   <div id="main-container" class="container">
     <section class="main-section">
@@ -51,7 +78,6 @@
       </div>
 
     </section>
-
   </div>
 
   <footer>
@@ -59,6 +85,13 @@
       Copyright &copy;
     </div>
   </footer>
+    <!-- from Bootstrap doc:
+       Many of our components require the use of JavaScript to function. Specifically, 
+       they require jQuery, Popper.js, and our own JavaScript plugins. Place the following <script>s 
+       near the end of your pages, right before the closing </body> tag, to enable them. jQuery must come first, 
+       then Popper.js, and then our JavaScript plugins. -->
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
-
 </html>
