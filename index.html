@@ -13,9 +13,8 @@
 
 <body>
   <!-- The navbar is outside the container so it bleeds all the way to edge -->
-    <div class="row">
-      <div class="col-md-12">
-        <nav class="navbar navbar-expand-lg  navbar-light bg-light">
+      <div>
+        <nav class="navbar navbar-expand-sm  navbar-light bg-light">
             <!-- Brand  -->
             <a class="navbar-brand" href="index.html">Brenda Thompson</a>
             <!-- Toggler/collapsible button -->
@@ -37,35 +36,41 @@
                   <a class="nav-link" href="contact.html">Contact</a>
                 </li>
               </ul>
-              <!-- inline search form inside the navbar. Not functional yet -->
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
-            </div> <!-- end div with collapse class to collapse nav menu -->
+            </div>
         </nav>
-      </div> <!-- end nav bar column -->
-    </div> <!-- end nav bar row -->
+      </div>
 
-    <div id="main-container" class="container">
-      <section class="main-section">
-       <h1>About Me</h1>
-
-        <img src="assets/images/Brenda-portrait.png" class="auth-image" alt="Brenda Thompson">
-
-        <p>Hello. I'm Brenda. Welcome to my portfolio site. I'm an experienced software 
-         developer currently focused on full stack web development. Check out  
-        <a class="links" href="https://www.linkedin.com/in/brenda-thompson/" target="_blank">my Linked-in page</a>
-         for more information about my work history, or you can browse through this portfolio 
-         site for a better picture of what im up to as a full stack web developer</p>
-      </section>
-    </div>
-
-  <footer>
+    <!-- Begin Main Content here  -->
     <div class="container">
-      Copyright &copy; 
-    </div>
-  </footer>
+        <div class="row">
+          <!-- 1st column -->
+          <div class="col-sm-3">
+            <h1>About Me</h1>
+          </div> <!-- end 1st col -->
+
+          <!-- 2nd column - This is a filler to allow our columns to work out to 12 -->
+          <div class="col-sm-9">
+          </div> <!-- end 2nd col -->
+        </div> <!-- end 1st row -->
+
+        <div class="row">
+          <div class="col-sm-3">
+            <img class="img-fluid" src="assets/images/Brenda-portrait.png" class="auth-image" alt="Brenda Thompson">
+          </div> <!-- end col for image -->
+          <div class="col-sm-9">
+           <p>Hello. I'm Brenda. Welcome to my portfolio site. I'm an experienced software 
+             developer currently focused on full stack web development. Check out  
+              <a class="links" href="https://www.linkedin.com/in/brenda-thompson/" target="_blank">my Linked-in page</a>
+              for more information about my work history, or you can browse through this portfolio 
+              site for a better picture of what im up to as a full stack web developer</p>
+          </div> <!-- end col for bio -->
+        </div> <!-- end row for image and bio-->
+    </div> <!-- end main content -->
+    <footer>
+        <div class="container">
+          Copyright &copy Brenda Thompson; 
+        </div>
+    </footer>
   <!-- from Bootstrap doc:
        Many of our components require the use of JavaScript to function. Specifically, 
        they require jQuery, Popper.js, and our own JavaScript plugins. Place the following <script>s 

@@ -13,69 +13,64 @@
       
 <body>
         <!-- The navbar is outside the container so it bleeds all the way to edge -->
-          <div class="row">
-            <div class="col-md-12">
-              <nav class="navbar navbar-expand-lg  navbar-light bg-light">
-                  <!-- Brand  -->
-                  <a class="navbar-brand" href="index.html">Brenda Thompson</a>
-                  <!-- Toggler/collapsible button -->
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" 
-                          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-                          aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Navigation Menu -->
-                    <ul class="navbar-nav ml-auto">
-                      <li class="nav-item">
-                        <a class="nav-link" href="index.html">About</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                      </li>
-                      <li class="nav-item active">
-                        <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
-                      </li>
-                    </ul>
-                    <!-- inline search form inside the navbar. Not functional yet -->
-                    <form class="form-inline my-2 my-lg-0">
-                      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                  </div> <!-- end div with collapse class to collapse nav menu -->
-              </nav>
-            </div> <!-- end nav bar column -->
-          </div> <!-- end nav bar row -->
+      <div>
+        <nav class="navbar navbar-expand-sm  navbar-light bg-light">
+          <!-- Brand  -->
+          <a class="navbar-brand" href="index.html">Brenda Thompson</a>
+          <!-- Toggler/collapsible button -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!-- Navigation Menu -->
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+          </div>
+        </nav>
+      </div> 
     
-  <div id="main-container" class="container">
-    <section class="main-section">
+  <div class="container">
       <h1>Contact</h1>
+      <div class="row">
+        <div class="col-sm-9">
+          <form>
+            <div class="form-group">
+              <label for="formName">Name</label>
+              <input type="text" class="form-control" id="formName" placeholder="Enter Your Name">
+            </div>
 
-      <form id="contact-form">
-        <ul>
-          <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
-        </ul>
-        <input type="submit">
-      </form>
+              <div class="form-group">
+                <label for="formEmail">Your email address</label>
+                <input type="email" class="form-control" id="formEmail" placeholder="Email Address">
+              </div>
 
-    </section>
+              <div class="form-group">
+                  <label for="formMessage">Message</label>
+                  <input type="text" class="form-control" id="formMessage" placeholder="Enter Your Message">
+              </div>
 
+              <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+              <button type="submit" class="btn btn-outline-dark">Submit</button>
+            </form>
+        </div>
+      </div>
   </div>
+
 
   <footer>
     <div class="container">
-      Copyright &copy; 
+      Copyright &copy; Brenda Thompson
     </div>
   </footer>
     <!-- from Bootstrap doc:
