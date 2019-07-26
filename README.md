@@ -1,7 +1,7 @@
  # Portfolio Page
  # Repo Name: BrendaTH.github.io
 
-## GITHUB Location: hhttps://github.com/BrendaTH/BrendaTH.github.io
+## GITHUB Location: https://github.com/BrendaTH/BrendaTH.github.io
 
 ## Portfolio Operation
 Nav bar at the top has an About, Portfolio, and Contact pages.
